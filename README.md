@@ -42,4 +42,4 @@ Don't forget to subscribe to our [YouTube channel](https://www.youtube.com/@mowk
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
+This project is licensed under the MIT License.
