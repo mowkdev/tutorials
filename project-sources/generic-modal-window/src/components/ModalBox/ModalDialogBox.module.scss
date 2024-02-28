@@ -1,0 +1,23 @@
+.dialog-box {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  padding: 20px;
+  text-align: left;
+  h4 {
+    margin: 0;
+
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .content {
+    padding: 20px 0;
+  }
+}
+
+.backdrop {
+  background-color: #bebebe;
+}
