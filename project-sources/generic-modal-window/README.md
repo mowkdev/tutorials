@@ -1,30 +1,45 @@
-# React + TypeScript + Vite
+# Generic Modal Component
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is source file for tutorial on creating a generic modal component in React with TypeScript and SCSS modules.
 
-Currently, two official plugins are available:
+## Technical prerequisites
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Node.js (version 18+. 20+ required)
+- npm
 
-## Expanding the ESLint configuration
+## Running the project
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+To run the project, clone the repository and run the following commands:
 
-- Configure the top-level `parserOptions` property like this:
+Navigate to the project folder:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+cd project-sources/generic-modal-window
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start development server:
+
+```bash
+npm run dev
+```
+
+Build the project:
+
+```bash
+npm run build
+```
+
+The project will be available at `http://localhost:5173/`.
+
+## Author
+
+Sergey Moshkanov [@mowkdev](https://github.com/mowkdev)
+
+- [LinkedIn](https://www.linkedin.com/in/mowkdev/)
+- [YouTube](https://www.youtube.com/@mowkdev)
