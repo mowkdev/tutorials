@@ -1,33 +1,30 @@
 import styles from "./GenericModal.module.scss";
-import classNames from "classnames";
+import { PropsWithChildren } from "react";
 
-interface GenericModalProps {
+interface IGenericModalProps extends PropsWithChildren {
   isOpen: boolean;
   onClose: () => void;
-  children: any;
-  backdropClassName?: string;
-  contentClassName?: string;
-  disableCloseOnClickOutside?: boolean;
+  disableClickAwayClose?: boolean;
 }
 
 export default function GenericModal({
   isOpen,
   onClose,
+  disableClickAwayClose,
   children,
-  backdropClassName,
-  contentClassName,
-  disableCloseOnClickOutside,
-}: GenericModalProps) {
-  if (!isOpen) return null;
+}: IGenericModalProps) {
+  if (!isOpen) {
+    return null;
+  }
 
   return (
     <div
-      className={classNames(styles["modal-backdrop"], backdropClassName)}
-      onClick={disableCloseOnClickOutside ? undefined : onClose}
+      className={styles["modal-backdrop"]}
+      onClick={disableClickAwayClose ? undefined : onClose}
     >
       <div
-        className={classNames(styles["modal-content"], contentClassName)}
-        onClick={(e) => e.stopPropagation()}
+        className={styles["modal-content"]}
+        onClick={(event) => event.stopPropagation()}
       >
         {children}
       </div>
