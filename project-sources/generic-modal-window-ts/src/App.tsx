@@ -1,10 +1,10 @@
-import styles from "./App.module.scss";
-import GenericModal from "./components/GenericModal/GenericModal.tsx";
-import { useState } from "react";
+import styles from './App.module.scss';
+import GenericModal from './components/GenericModal/GenericModal.tsx';
+import { useState } from 'react';
 
 function App() {
-  const [genericModalOpen, setGenericModalOpen] = useState(false);
-  const [dialogBoxOpen, setDialogBoxOpen] = useState(false);
+  const [genericModalOpen, setGenericModalOpen] = useState<boolean>(false);
+  const [dialogBoxOpen, setDialogBoxOpen] = useState<boolean>(false);
 
   const onGenericModalOpen = () => {
     setGenericModalOpen(true);

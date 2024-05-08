@@ -1,0 +1,17 @@
+.todo-form {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.fieldset {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    label {
+      margin-right: 10px;
+    }
+}
