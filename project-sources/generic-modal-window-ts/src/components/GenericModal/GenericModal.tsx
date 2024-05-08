@@ -1,5 +1,5 @@
-import styles from "./GenericModal.module.scss";
-import { PropsWithChildren } from "react";
+import styles from './GenericModal.module.scss';
+import { PropsWithChildren } from 'react';
 
 interface IGenericModalProps extends PropsWithChildren {
   isOpen: boolean;
@@ -7,11 +7,17 @@ interface IGenericModalProps extends PropsWithChildren {
   disableClickAwayClose?: boolean;
 }
 
+/*type GenericModalPropsType = PropsWithChildren & {
+  isOpen: boolean;
+  onClose: () => void;
+  disableClickAwayClose?: boolean;
+};*/
+
 export default function GenericModal({
-  isOpen,
-  onClose,
-  disableClickAwayClose,
-  children,
+    isOpen,
+    onClose,
+    children,
+    disableClickAwayClose
 }: IGenericModalProps) {
   if (!isOpen) {
     return null;
